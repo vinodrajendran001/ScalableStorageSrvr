@@ -91,6 +91,12 @@ public class ECSClient {
 		else if(tokens[0].equals("start")) {
 			if(tokens.length == 1) {
 				logger.info("Received " + tokens[0].toString());
+				kvActions = new KVActions(p);
+				try {
+					kvActions.start();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				
 			}
 			
@@ -98,6 +104,12 @@ public class ECSClient {
 		else if(tokens[0].equals("stop")) {
 			if(tokens.length == 1) {
 				logger.info("Received " + tokens[0].toString());
+				kvActions = new KVActions(p);
+				try {
+					kvActions.stop();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				
 			}
 			
@@ -105,6 +117,12 @@ public class ECSClient {
 		else if(tokens[0].equals("shutDown")) {
 			if(tokens.length == 1) {
 				logger.info("Received " + tokens[0].toString());
+				kvActions = new KVActions(p);
+				try {
+					kvActions.shutDown();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				
 			}
 			
@@ -112,6 +130,12 @@ public class ECSClient {
 		else if(tokens[0].equals("addNode")) {
 			if(tokens.length == 1) {
 				logger.info("Received " + tokens[0].toString());
+				kvActions = new KVActions(p);
+				try {
+					kvActions.addNode();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				
 			}
 			
@@ -119,6 +143,12 @@ public class ECSClient {
 		else if(tokens[0].equals("remmoveNode")) {
 			if(tokens.length == 1) {
 				logger.info("Received " + tokens[0].toString());
+				kvActions = new KVActions(p);
+				try {
+					kvActions.removeNode();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				
 			}
 			

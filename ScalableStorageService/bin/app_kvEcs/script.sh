@@ -1,1 +1,1 @@
-ssh -n 127.0.0.1 nohup java -jar F:\\Informatik\\ScalableStorageService\\ms3-server.jar 50000
+ssh -n 127.0.0.1 nohup java -jar C:\Users\User\git\ScalableStorageServer\ScalableStorageService\ms3-server.jar 50000 ERROR &

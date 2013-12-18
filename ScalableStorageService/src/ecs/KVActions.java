@@ -21,9 +21,9 @@ public class KVActions implements KVActionsInterface {
 	@Override
 	public void initService(int numberOfNodes) throws Exception {
 		Process proc ;
-		String script = "../src/app_kvEcs/script.sh";
-		//String script = "F:\\Informatik\\ScalableStorageService\\src\\app_kvEcs\\script.sh";
-		
+		//String script = "../src/app_kvEcs/script.sh";
+		String script = "C:\\Users\\User\\git\\ScalableStorageServer\\ScalableStorageService\\src\\app_kvEcs\\script.sh";
+		System.out.println(script);
 		Runtime run = Runtime.getRuntime();
 		for (int i=0 ; i< numberOfNodes ; i ++) {
 			proc = run.exec(script);

@@ -35,6 +35,7 @@ private static Logger logger = Logger.getRootLogger();
 	
 	List <Data> p ;
 	
+	
 	private Database db = new Database();
 	private HandleKVMessage hk = new HandleKVMessage();
 	
