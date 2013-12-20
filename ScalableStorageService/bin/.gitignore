@@ -1,9 +1,2 @@
-/app_kvClient
-/app_kvEcs
-/app_kvServer
-/client
-/common
 /ecs
-/logger
-/server
-/testing
+/app_kvEcs
